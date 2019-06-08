@@ -48,6 +48,16 @@ const Navbar = (props) => {
                         <h2>Recommended Gifts</h2>
                     </Link>
                 </div>
+            )
+        case 'CustomerListPage':
+            return (
+                <div className='navbar red-bg customerListNav'>
+                    <div>
+                        <h2>Customers List</h2>
+                        <p>315 people</p>
+                        <input placeholder='Search' type="text"/>
+                    </div>
+                </div>
             )           
         default:
         return (

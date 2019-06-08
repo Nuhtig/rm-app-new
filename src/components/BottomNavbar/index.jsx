@@ -1,22 +1,33 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
 
+import homered from '../../images/homered.png';
 import home from '../../images/home.png';
 import customers from '../../images/avatar.png';
 import notes from '../../images/edit.png';
 import inbox from '../../images/envelope.png';
 import account from '../../images/account.png';
 
-const BottomNavbar = () => {
+const BottomNavbar = props => {
+    console.log(props)
     return ( 
         <div className='row bottomnavbar'>
-            <div className='group active'>
-                <img src={home} alt="home"/>
+            <NavLink 
+            to='/' 
+            exact 
+            className='group'
+            >
+                <div className='homeimg'></div>
                 <p>Home</p>
-            </div>
-            <div className='group'>
-                <img src={customers} alt="customers"/>
+            </NavLink>
+            <NavLink 
+            to='/CustomerListPage' 
+            exact 
+            className='group'
+            >
+                <div className='customerimg'></div>
                 <p>Customers</p>
-            </div>
+            </NavLink>
             <div className='group'>
                 <img src={notes} alt="notes"/>
                 <p>Notes</p>

@@ -10,6 +10,7 @@ import BirthdayPage from './BirthdayPage';
 import ShowMorePage from './ShowMorePage';
 import ProfilePage from './ProfilePage';
 import RecommendedGiftsPage from './RecommendedGiftsPage';
+import CustomerListPage from './CustomerListPage';
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
         <Route path='/ShowMorePage' exact component={ShowMorePage} />
         <Route path='/ProfilePage' exact component={ProfilePage} />
         <Route path='/RecommendedGiftsPage' exact component={RecommendedGiftsPage} />
+        <Route path='/CustomerListPage' exact component={CustomerListPage} />
+        <BottomNavbar />
       </Router>
-      <BottomNavbar />
     </div>
   );
 }
