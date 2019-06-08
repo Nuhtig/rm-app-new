@@ -14,7 +14,7 @@ import CustomerListPage from './CustomerListPage';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
         <Route path='/' exact component={HomePage} />
         <Route path='/Schedulepage' exact component={SchedulePage} />
