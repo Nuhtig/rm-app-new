@@ -9,6 +9,7 @@ import SchedulePage from './SchedulePage';
 import BirthdayPage from './BirthdayPage';
 import ShowMorePage from './ShowMorePage';
 import ProfilePage from './ProfilePage';
+import RecommendedGiftsPage from './RecommendedGiftsPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/BirthdayPage' exact component={BirthdayPage} />
         <Route path='/ShowMorePage' exact component={ShowMorePage} />
         <Route path='/ProfilePage' exact component={ProfilePage} />
+        <Route path='/RecommendedGiftsPage' exact component={RecommendedGiftsPage} />
       </Router>
       <BottomNavbar />
     </div>

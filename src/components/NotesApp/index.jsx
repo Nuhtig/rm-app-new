@@ -111,7 +111,7 @@ const NotesApp = props => {
         <div className='card notesCard'>
             {populateList(notes)}
             {isEditing ? editForm() : null}
-            <img onClick={()=>handleClick()} src={plus} alt=""/>
+            <img onClick={()=>handleClick()} src={plus} alt="plus"/>
         </div>
      );
 }
