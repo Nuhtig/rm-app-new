@@ -53,9 +53,9 @@ const ProfilePage = props => {
                 <ProfileCard 
                     img={props.location.state.img}
                     name={props.location.state.name}
-                    desc='Fusce et quam non augue mattis ullamcorper.'
-                    date='15th March 2019'
-                    products={['Current account','Credit card','Loan']}
+                    desc='Founder of 1337 Ventures'
+                    date='15th May 2019'
+                    products={['Current account','Credit card','Home Mortgage']}
                 />
                 <h2 className='title profile-title'>Notes</h2>
                 <NotesApp 
