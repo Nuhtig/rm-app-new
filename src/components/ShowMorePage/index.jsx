@@ -7,6 +7,8 @@ const ShowMorePage = () => {
         data: []
     })
 
+    const [dataLoaded, changeDataHasLoaded] = useState(false)
+
     const fetchData = () => {
         const url = `https://gnews.io/api/v2/?q=bikesh+lakhmichand&token=${process.env.REACT_APP_API_KEY_2}&country=my`;
         const req = new Request(url);
@@ -14,10 +16,12 @@ const ShowMorePage = () => {
         fetch(req).then((response) => {
             return response.json()
         }).then((myJson) => {
-            console.log(myJson)
             changeContent({
                 data: myJson.articles
             })
+            changeDataHasLoaded(true)
+        }).catch((err)=> {
+            alert(err)
         })
     }
 
@@ -32,6 +36,7 @@ const ShowMorePage = () => {
                     date={article.date}
                     desc={article.desc}
                     img={article.image}
+                    dataLoaded={dataLoaded}
                 />
             )
         })
@@ -45,6 +50,18 @@ const ShowMorePage = () => {
         <div>
             <Navbar page='topnews' />
             <section>
+                {
+                    !dataLoaded ? <TopNewsCard /> : null
+                }
+                {
+                    !dataLoaded ? <TopNewsCard /> : null
+                }
+                {
+                    !dataLoaded ? <TopNewsCard /> : null
+                }
+                {
+                    !dataLoaded ? <TopNewsCard /> : null
+                }
                 {populateNews()}
             </section>
         </div>

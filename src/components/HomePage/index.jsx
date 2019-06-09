@@ -8,9 +8,9 @@ import TopNewsCard from '../Cards/TopNewsCard/index.jsx';
 import ShowMoreCard from '../Cards/ShowMoreCard/index.jsx';
 import ProfessionalCard from '../Cards/ProfessionalCard/index.jsx';
 
-import hsbcimg from '../../images/s3-news.jpg';
-import hsbcimg2 from '../../images/0.jpeg';
-import property from '../../images/property.jpg';
+import ventures from '../../images/1337.jpeg';
+import tara from '../../images/tara.jpg';
+import openlab from '../../images/openlab.jpg';
 import mily from '../../images/g.jpeg';
 import milyimg from '../../images/mily1.png';
 import Aditya from '../../images/Aditya.jpeg';
@@ -32,25 +32,25 @@ function Homepage() {
       <section>
         <h2 className='title'>Top News</h2>
           <TopNewsCard 
-            link='https://www.thestar.com.my/business/business-news/2019/05/08/malaysians-spend-more-time-looking-at-properties-than-going-to-the-gym-or-reading/'
-            title='Malaysians spend more time looking at properties...'
-            date='Wednesday, 8 May 2019'
-            desc='...watching the news,” said country head for retail banking and wealth management Tara Latini.'
-            img={property}
+            link='https://fintechnews.my/20582/various/hsbc-openlab-innovation-challenge-retail-banking-registration-teams/?fbclid=IwAR2_ru9aOrrA4bsC0tXASEbOpyn3Smn9PbpE4AtY8Pz9nIvSJOUnbbYjrpw'
+            title='Hackathons are Outdated, HSBC’s New Challenge Lets You Solve Retail Banking Problems from Home'
+            date='26 April 2019'
+            desc='Tara Latini, Country Head, Retail Banking and Wealth Management, HSBC Malaysia said: tara latini hsbc openlab innovation challenge....'
+            // img={openlab}
           />
           <TopNewsCard 
             link='https://www.thedrum.com/news/2019/05/31/hsbc-champions-internationalism-football-full-english-final-ad'
-            title='Tara Latini likes this'
-            date='31 May 2019'
-            desc='HSBC UK has championed internationalism in football to celebrate the first all English Champions League and Europa League finals.'
-            img={hsbcimg}
+            title='1337 VENTURES RECEIVES EQUITY CROWDFUNDING LICENSE'
+            date='20 May 2019'
+            desc='1337 Ventures associate, Max Teh, founding partner Bikesh Lakhmichand, Malaysian Minister of Finance Lim Guan Eng and SC ...'
+            img={ventures}
           />
           <TopNewsCard 
             link='https://www.linkedin.com/company/tun-razak-exchange/'
-            title='Tara Latini likes this'
-            date='5d'
-            desc='As you traverse the city, you may not always notice the multi-faceted shapes of the KL metropolis.'
-            img={hsbcimg2}
+            title='HSBC Malaysia names Tara Latini as new retail banking head'
+            date='23 Aug 2018'
+            desc='KUALA LUMPUR (Aug 23): HSBC Bank Malaysia Bhd (HSBC Malaysia) has appointed Tara Latini as its new head of Retail Banking and ...'
+            img={tara}
           />
           <ShowMoreCard />
       </section>

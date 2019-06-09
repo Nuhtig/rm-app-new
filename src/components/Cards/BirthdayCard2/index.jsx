@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const BirthdayCard2 = (props) => {
     return ( 
@@ -9,8 +10,8 @@ const BirthdayCard2 = (props) => {
                 <p className='dob'>{props.dob}</p>
                 <p className='desc'>Wish {props.name} a happy birthday or send a gift!</p>
                 <div className='row notif'>
-                    <p className='gift'>Send gift</p>
-                    <p className='message'>Send message</p>
+                    <Link className='gift' to='/RecommendedGiftsPage'>Send gift</Link>
+                    <p>Send message</p>
                 </div>
             </div>
         </div>

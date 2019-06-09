@@ -10,9 +10,9 @@ const ProfilePage = props => {
         data: []
     })
 
-    const nameQuery = props.location.state.name.split(' ').join('+');
+    console.log(props)
 
-    console.log(nameQuery)
+    const nameQuery = props.location.state.name.split(' ').join('+');
 
     const fetchData = () => {
         const url = `https://gnews.io/api/v2/?q=${nameQuery}&token=${process.env.REACT_APP_API_KEY_2}&country=my`;
@@ -37,6 +37,8 @@ const ProfilePage = props => {
                 <UpdatesCard 
                     title={article.title}
                     desc={article.desc}
+                    phone='0123027527'
+                    textbody='Congratulation for your ECF license'
                 />
             )
         })

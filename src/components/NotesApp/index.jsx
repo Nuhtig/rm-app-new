@@ -10,9 +10,6 @@ const NotesApp = props => {
     },{
         title: 'Prefer to meet night time in Cyberjaya.',
         desc: 'Bikesh schedule is always occupied and changes very frequent. Is best to meet him at his residential area after working hours.'
-    },{
-        title: 'Coffee enthusiast.',
-        desc: 'Like to receive coffee related gift.'
     }]);
 
     const [isEditing, changeIsEditing] = useState(false);

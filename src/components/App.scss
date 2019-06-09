@@ -143,6 +143,8 @@ section {
 }
 
 .top-news-card {
+  overflow: hidden;
+
   h4 {
     font-size: 14px;
     margin: 5px;
@@ -174,13 +176,22 @@ section {
     }
   }
 
-  img {
-    object-fit: cover;
+  .imgcontainer {
+    height: 170px;
+    width: 40%;
     overflow: hidden;
-    height: auto;
-    max-height: 135px;
+    background: #E0E0E0;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      overflow: hidden;
+      height: 100%;
+      width: auto;
+      position: relative;
+    }
   }
-  
+
   .content {
     width: 60%;
     padding: 10px;
@@ -389,6 +400,11 @@ section {
   overflow: hidden;
   height: 159px;
 
+  a {
+    font-size: 12px;
+    color: #333333;
+  }
+
   img {
     width: 30%;
     margin-right: 20px;
@@ -549,6 +565,9 @@ section {
 
   hr {
     margin-bottom: 15px;
+    height: 1px;
+    background: #e0e0e0;
+    border: none;
   }
 }
 
@@ -557,6 +576,7 @@ section {
 
   a {
     font-size: 12px;
+    color: #333333;
   }
 
   .row {

@@ -8,6 +8,10 @@ import coffee3 from '../../images/coffee3.png'
 import coffee4 from '../../images/coffee4.png'
 import coffee5 from '../../images/coffee5.png'
 import coffee6 from '../../images/coffee6.png'
+import coffee7 from '../../images/coffee7.png'
+import coffee8 from '../../images/coffee8.png'
+import coffee9 from '../../images/coffee9.png'
+import coffee10 from '../../images/coffee10.png'
 
 const RecommendedGiftsPage = props => {
     return ( 
@@ -60,6 +64,39 @@ const RecommendedGiftsPage = props => {
                         desc='Interdum et malesuada fames ac ante…'
                         price='RM 889'
                         url='https://www.amazon.com/Nispira-Belgian-Belgium-Luxury-Balance/dp/B00BWH8UZ2?imprToken=xs.5RqvjesL..J4u2QTbpQ&slotNum=23&psc=1%E2%8A%82scriptionId=AKIAJ7AVFUMOQR7SVC3A&tag=roastycoffee-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B00BWH8UZ2&fbclid=IwAR1FMeYkxqBqBYWfyabkSBNaAf34fN1kgEJHiFwwrONEpgj9A899GD7DHM8'
+                    />
+                </div>
+                <div className='row'>
+                    <GiftCard
+                        img={coffee7}
+                        title='Nispira Belgian Belgium Luxury…'
+                        desc='Interdum et malesuada fames ac ante…'
+                        price='RM 889'
+                        url='https://www.amazon.com/Nispira-Belgian-Belgium-Luxury-Balance/dp/B00BWH8UZ2?imprToken=xs.5RqvjesL..J4u2QTbpQ&slotNum=23&psc=1%E2%8A%82scriptionId=AKIAJ7AVFUMOQR7SVC3A&tag=roastycoffee-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B00BWH8UZ2&fbclid=IwAR1FMeYkxqBqBYWfyabkSBNaAf34fN1kgEJHiFwwrONEpgj9A899GD7DHM8'
+                    />
+                    <GiftCard
+                        img={coffee8}
+                        title='Nispira Belgian Belgium Luxury…'
+                        desc='Interdum et malesuada fames ac ante…'
+                        price='RM 889'
+                        url='https://www.amazon.com/Nispira-Belgian-Belgium-Luxury-Balance/dp/B00BWH8UZ2?imprToken=xs.5RqvjesL..J4u2QTbpQ&slotNum=23&psc=1%E2%8A%82scriptionId=AKIAJ7AVFUMOQR7SVC3A&tag=roastycoffee-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B00BWH8UZ2&fbclid=IwAR1FMeYkxqBqBYWfyabkSBNaAf34fN1kgEJHiFwwrONEpgj9A899GD7DHM8'
+                    />
+                </div>
+                <div className='row'>
+                    <GiftCard
+                        img={coffee9}
+                        title='Khaw-Fee HG1B Manual Coffee...'
+                        desc="For some of us, Coffee is a way of life. There's nothing quite like getting the..."
+                        price='RM 254.39'
+                        url='https://www.lazada.com.my/products/khaw-fee-hg1b-manual-coffee-grinder-with-conical-ceramic-burr-because-hand-ground-coffee-beans-taste-best-infinitely-adjustable-grind-glass-jar-stainless-steel-built-to-last-quiet-and-portable-i361046554-s511934544.html?spm=a2o4k.searchlist.list.1.44261c7dO1u8Jr&search=1&fbclid=IwAR3RBAUbq1u0kWdyA2D36DfptwyPeVrf5X2xhDZ0iLFb4Bs_T9fntx7h_0g'
+                    />
+                    <GiftCard
+                        img={coffee10}
+                        title='Aerobie Aeropress Coffee and Espresso Maker'
+                        desc='The AEROPRESS® is an entirely new way to make coffee. 
+                        Water and ground... '
+                        price='RM 234'
+                        url='https://www.lazada.com.my/products/aerobie-aeropress-coffee-and-espresso-maker-i647940-s740339.html?spm=a2o4k.searchlist.list.3.4399341fb1mVBv&search=1&fbclid=IwAR3l44d_6PsO4FeaF8tFr1_d8PyxEjJj815VtsDDXQ3GfiEafjoc9ze47OQ'
                     />
                 </div>
             </section>

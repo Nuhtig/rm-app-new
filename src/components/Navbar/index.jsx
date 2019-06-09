@@ -43,7 +43,7 @@ const Navbar = (props) => {
         case 'RecommendedGiftsPage':
             return (
                 <div className='navbar red-bg'>
-                    <Link to='/Schedulepage' className='row back'>
+                    <Link to='/' className='row back'>
                     <img src={right} alt="right"/>
                         <h2>Recommended Gifts</h2>
                     </Link>

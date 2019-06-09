@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { AnimatedSwitch } from 'react-router-transition';
+import ScrollToTop from './HOC/ScrollToTop'
 
 import './App.scss';
 import BottomNavbar from './BottomNavbar';
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className='App'>
       <Router>
+        <ScrollToTop>
         <AnimatedSwitch
           atEnter={{ opacity: 0}}
           atLeave={{ opacity: 0 }}
@@ -32,6 +34,7 @@ function App() {
           <Route path='/CustomerListPage' exact component={CustomerListPage} />
           
         </AnimatedSwitch>
+        </ScrollToTop>
         <BottomNavbar />
       </Router>
     </div>
