@@ -3,14 +3,14 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const UpdatesBirthdayCard = () => {
     return ( 
-        <Link to='/RecommendedGiftsPage' className='card updatescard birthday'>
+        <div className='card updatescard birthday'>
             <p className='title'>Birthday Soon!</p>
             <p className='desc'>Fusce Et Quam birthday fall at 7th June 2019.</p>
             <div className='row'>
                 <p>Send message</p>
-                <p>Send gift</p>
+                <Link to='/RecommendedGiftsPage'>Send gift</Link>
             </div>
-        </Link>
+        </div>
      );
 }
  

@@ -1,15 +1,16 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-const UpdatesCard = () => {
+const UpdatesCard = props => {
     return ( 
-        <div className='card updatescard'>
-            <p className='title'>Fusce Et Quam won Rice Bowl Award</p>
-            <p className='desc'>Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque in lorem justo. </p>
+        <Link className='card updatescard'>
+            <p className='title'>{props.title}</p>
+            <p className='desc'>{props.desc}</p>
             <div className='row'>
                 <p>Send message</p>
-                <p>Send gift</p>
+                <Link to='/RecommendedGiftsPage'>Send gift</Link>
             </div>
-        </div>
+        </Link>
      );
 }
  

@@ -1,12 +1,12 @@
 import React from 'react'
 
 const TopNewsCard = (props) => {
-    if (props.img === undefined) {
+    if (props.img === undefined || props.img === '') {
         return ( 
             <a href={props.link} target='_blank' rel='noopener noreferrer'> 
                 <div className='card top-news-card'>
                     <h4>{props.title}</h4>
-                    <p className='link'>{props.link}</p>
+                    <p className='link'>{props.website}</p>
                     <p><span>{props.date}</span>{props.desc}</p>
                 </div>
             </a>

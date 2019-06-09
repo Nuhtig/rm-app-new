@@ -8,12 +8,13 @@ const ShowMorePage = () => {
     })
 
     const fetchData = () => {
-        const url = `https://newsapi.org/v2/everything?q=Apple&from=2019-06-07&sortBy=popularity&apiKey=${process.env.REACT_APP_API_KEY}`;
+        const url = `https://gnews.io/api/v2/?q=bikesh+lakhmichand&token=${process.env.REACT_APP_API_KEY_2}&country=my`;
         const req = new Request(url);
 
         fetch(req).then((response) => {
             return response.json()
         }).then((myJson) => {
+            console.log(myJson)
             changeContent({
                 data: myJson.articles
             })
@@ -26,10 +27,11 @@ const ShowMorePage = () => {
                 <TopNewsCard
                     key={index}
                     title={article.title}
-                    link={article.url}
-                    date={article.publishedAt}
-                    desc={article.description}
-                    img={article.urlToImage}
+                    link={article.link}
+                    website={article.website}
+                    date={article.date}
+                    desc={article.desc}
+                    img={article.image}
                 />
             )
         })
