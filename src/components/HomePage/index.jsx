@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 import Navbar from '../Navbar';
 import ScheduleCard from '../Cards/ScheduleCard/index.jsx';
@@ -17,6 +17,14 @@ import Aditya from '../../images/Aditya.jpeg';
 import Adityaimg from '../../images/adityaimg.jpeg';
 
 function Homepage() {
+  const [dataLoaded, changeDataLoaded] = useState(false)
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      changeDataLoaded(true)
+    },3000)
+  })
+
   return (
     <div className="App">
       <Navbar />
@@ -37,6 +45,7 @@ function Homepage() {
             date='26 April 2019'
             desc='Tara Latini, Country Head, Retail Banking and Wealth Management, HSBC Malaysia said: tara latini hsbc openlab innovation challenge....'
             // img={openlab}
+            dataLoaded={dataLoaded}
           />
           <TopNewsCard 
             link='https://www.thedrum.com/news/2019/05/31/hsbc-champions-internationalism-football-full-english-final-ad'
@@ -44,6 +53,7 @@ function Homepage() {
             date='20 May 2019'
             desc='1337 Ventures associate, Max Teh, founding partner Bikesh Lakhmichand, Malaysian Minister of Finance Lim Guan Eng and SC ...'
             img={ventures}
+            dataLoaded={dataLoaded}
           />
           <TopNewsCard 
             link='https://www.linkedin.com/company/tun-razak-exchange/'
@@ -51,6 +61,7 @@ function Homepage() {
             date='23 Aug 2018'
             desc='KUALA LUMPUR (Aug 23): HSBC Bank Malaysia Bhd (HSBC Malaysia) has appointed Tara Latini as its new head of Retail Banking and ...'
             img={tara}
+            dataLoaded={dataLoaded}
           />
           <ShowMoreCard />
       </section>
