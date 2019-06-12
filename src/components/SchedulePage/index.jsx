@@ -3,8 +3,8 @@ import Navbar from '../Navbar';
 import ScheduleCard2 from '../Cards/ScheduleCard2/index.jsx';
 
 import kash from '../../images/kash.jpeg';
-import bikesh from '../../images/bikesh.jpeg';
-import Aditya from '../../images/Aditya.jpeg'
+import stephen from '../../images/stephen.jpeg';
+import Albert from '../../images/Albert.jpeg'
 
 const SchedulePage = () => {
     return ( 
@@ -19,18 +19,18 @@ const SchedulePage = () => {
                     img={kash}
                 />
                 <ScheduleCard2
-                    name='Bikesh Lakhmichand'
+                    name='Stephen Cheshire'
                     desc='Lunch appointment'
                     time='11:00 AM'
                     location='Pavilion'
-                    img={bikesh}
+                    img={stephen}
                 />
                 <ScheduleCard2
                     name='Aditya Tuli'
-                    desc='Financial report'
+                    desc='Financial report assessment'
                     time='4:00 PM'
                     location='HSBC KL Branch'
-                    img={Aditya}
+                    img={Albert}
                 />
                 <p className='bottomtext'>You have no more schedule for Today</p>
             </section>

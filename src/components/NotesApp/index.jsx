@@ -2,12 +2,7 @@ import React, {useState, useEffect} from 'react';
 import plus from '../../images/redplus.png'
 
 const NotesApp = props => {
-    const [notes, changeNotes] = useState([{
-        title: 'Football fan and support Manchester United football club.',
-    },{
-        title: 'Prefer to meet between 6pm to 8pm.',
-        desc: 'Kash schedule is always occupied and changes very frequent. The best time to catch him is after office hours.'
-    }]);
+    const [notes, changeNotes] = useState([])
 
     const [isEditing, changeIsEditing] = useState(false);
 
@@ -15,14 +10,6 @@ const NotesApp = props => {
         title: '',
         desc: ''
     })
-
-    const rehydrateState = () => {
-        const person = props.name;
-
-        if(localStorage.getItem(person)) {
-            console.log(localStorage.getItem(person))
-        }
-    }
 
     const populateList = notes => {
         return notes.map((note, index, arr)=> {
@@ -51,16 +38,14 @@ const NotesApp = props => {
         }
         
         changeNotes(newNote)
-        console.log(newNote)
-        localStorage.setItem(props.name, JSON.stringify(newNote));
+
+        localStorage.setItem(props.name, JSON.stringify(newNote))
     }
 
     const removeNote = index => {
         const newNote = [...notes];
         newNote.splice(index,1);
         changeNotes(newNote);
-
-        console.log(newNote)
 
         localStorage.setItem(props.name, JSON.stringify(newNote));
     }
@@ -114,6 +99,13 @@ const NotesApp = props => {
 
             if(localStorage.getItem(props.name)) {
                 changeNotes(data);
+            } else {
+                changeNotes([{
+                    title: 'Football fan and support Manchester United football club.',
+                },{
+                    title: 'Prefer to meet between 6pm to 8pm.',
+                    desc: 'Kash schedule is always occupied and changes very frequent. The best time to catch him is after office hours.'
+                }]);
             }
         }
         fetchData()

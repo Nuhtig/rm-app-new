@@ -13,8 +13,6 @@ const ProfilePage = props => {
 
     const [dataLoaded, changeDataHasLoaded] = useState(false)
 
-    console.log(props)
-
     const nameQuery = props.location.state.name.split(' ').join('+');
 
     const fetchData = () => {
@@ -28,6 +26,8 @@ const ProfilePage = props => {
             changeContent({
                 data: myJson.articles
             })
+        }).catch((err)=>{
+            console.log(err)
         })
     }
 
@@ -37,7 +37,8 @@ const ProfilePage = props => {
                 return
             }
             return (
-                <UpdatesCard 
+                <UpdatesCard
+                    key={index}
                     title={article.title}
                     desc={article.desc}
                     phone='0123027527'

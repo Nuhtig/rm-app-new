@@ -9,7 +9,6 @@ import inbox from '../../images/envelope.png';
 import account from '../../images/account.png';
 
 const BottomNavbar = props => {
-    console.log(props)
     return ( 
         <div className='row bottomnavbar'>
             <NavLink 
