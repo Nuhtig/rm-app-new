@@ -3,13 +3,10 @@ import plus from '../../images/redplus.png'
 
 const NotesApp = props => {
     const [notes, changeNotes] = useState([{
-        title: 'Also know as Mike Smith',
-        desc: 'Bikesh is also know as Mike Smith by his friend that know him for long time. '
+        title: 'Football fan and support Manchester United football club.',
     },{
-        title: 'Star Wars fan and support Liverpool football team.',
-    },{
-        title: 'Prefer to meet night time in Cyberjaya.',
-        desc: 'Bikesh schedule is always occupied and changes very frequent. Is best to meet him at his residential area after working hours.'
+        title: 'Prefer to meet between 6pm to 8pm.',
+        desc: 'Kash schedule is always occupied and changes very frequent. The best time to catch him is after office hours.'
     }]);
 
     const [isEditing, changeIsEditing] = useState(false);

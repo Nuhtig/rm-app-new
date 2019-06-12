@@ -58,7 +58,7 @@ const ProfilePage = props => {
                 <ProfileCard 
                     img={props.location.state.img}
                     name={props.location.state.name}
-                    desc='Founder of 1337 Ventures'
+                    desc='Co-founder, pitchIN and WTF Accelerator'
                     date='15th May 2019'
                     products={['Current account','Credit card','Home Mortgage']}
                 />
