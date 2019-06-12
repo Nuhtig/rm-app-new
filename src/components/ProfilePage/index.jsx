@@ -42,7 +42,7 @@ const ProfilePage = props => {
                     title={article.title}
                     desc={article.desc}
                     phone='0123027527'
-                    textbody='Congratulation for your ECF license'
+                    textbody='Congratulation on your pitchIN achievement.'
                 />
             )
         })
