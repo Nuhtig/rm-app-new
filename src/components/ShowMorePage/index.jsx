@@ -10,7 +10,7 @@ const ShowMorePage = () => {
     const [dataLoaded, changeDataHasLoaded] = useState(false)
 
     const fetchData = () => {
-        const url = `https://gnews.io/api/v2/?q=bikesh+lakhmichand&token=${process.env.REACT_APP_API_KEY_2}&country=my`;
+        const url = `https://gnews.io/api/v2/?q=Kashminder+Singh&token=${process.env.REACT_APP_API_KEY_2}&country=my`;
         const req = new Request(url);
 
         fetch(req).then((response) => {

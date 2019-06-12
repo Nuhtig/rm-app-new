@@ -4,11 +4,14 @@ import ProfileCard from '../Cards/ProfileCard/index.jsx';
 import NotesApp from '../NotesApp'
 import UpdatesCard from '../Cards/UpdatesCard/index.jsx'
 import UpdatesBirthdayCard from '../Cards/UpdatesBirthdayCard/index.jsx';
+import TopNewsCard from '../Cards/TopNewsCard/index.jsx';
 
 const ProfilePage = props => {
     const [content, changeContent] = useState({
         data: []
     })
+
+    const [dataLoaded, changeDataHasLoaded] = useState(false)
 
     console.log(props)
 
@@ -21,7 +24,7 @@ const ProfilePage = props => {
         fetch(req).then((response) => {
             return response.json()
         }).then((myJson) => {
-            console.log(myJson)
+            changeDataHasLoaded(true)
             changeContent({
                 data: myJson.articles
             })
@@ -64,6 +67,15 @@ const ProfilePage = props => {
                     name={props.location.state.name}
                 />
                 <h2 className='title'>Updates</h2>
+                {
+                    !dataLoaded ? <TopNewsCard /> : null
+                }
+                {
+                    !dataLoaded ? <TopNewsCard /> : null
+                }
+                {
+                    !dataLoaded ? <TopNewsCard /> : null
+                }
                 {populateUpdates()}
                 <UpdatesBirthdayCard />
             </section>
