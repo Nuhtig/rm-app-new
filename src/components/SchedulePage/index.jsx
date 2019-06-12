@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../Navbar';
 import ScheduleCard2 from '../Cards/ScheduleCard2/index.jsx';
 
-import mily from '../../images/g.jpeg';
+import kash from '../../images/kash.jpeg';
 import bikesh from '../../images/bikesh.jpeg';
 import Aditya from '../../images/Aditya.jpeg'
 
@@ -12,11 +12,11 @@ const SchedulePage = () => {
             <Navbar page='Schedule' />
             <section>
                 <ScheduleCard2
-                    name='Mily Liang'
+                    name='Kashminder Singh'
                     desc='Open bank account'
                     time='9:00 AM'
                     location='Ampang starbucks'
-                    img={mily}
+                    img={kash}
                 />
                 <ScheduleCard2
                     name='Bikesh Lakhmichand'

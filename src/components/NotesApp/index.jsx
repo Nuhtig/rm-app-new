@@ -16,6 +16,14 @@ const NotesApp = props => {
         desc: ''
     })
 
+    const rehydrateState = () => {
+        const person = props.name;
+
+        if(localStorage.getItem(person)) {
+            console.log(localStorage.getItem(person))
+        }
+    }
+
     const populateList = notes => {
         return notes.map((note, index, arr)=> {
             return(
@@ -33,7 +41,7 @@ const NotesApp = props => {
     }
 
     const addNote = () => {
-        const newNotes = [...notes, {
+        const newNote = [...notes, {
             title: value.title,
             desc: value.desc
         }]
@@ -42,14 +50,19 @@ const NotesApp = props => {
             return
         }
         
-        changeNotes(newNotes)
+        changeNotes(newNote)
+        console.log(newNote)
+        localStorage.setItem(props.name, JSON.stringify(newNote));
     }
 
     const removeNote = index => {
         const newNote = [...notes];
         newNote.splice(index,1);
         changeNotes(newNote);
-        localStorage.setItem(props.name, JSON.stringify(notes));
+
+        console.log(newNote)
+
+        localStorage.setItem(props.name, JSON.stringify(newNote));
     }
 
     const handleSubmit = () => {
